@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+        <link rel="icon" href="{Favicon}"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+        <meta name="viewport" content="width=775"/>
+        
+        <script type="text/javascript" src="http://indy.poofight.com/blog/mootools-release-1.11.js"></script>
+    	<script type="text/javascript" src="http://indy.poofight.com/blog/ext.js"></script>
+
+        <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+    	<script type="text/javascript">
+    		var pageTracker = _gat._getTracker("UA-347825-4");
+    		pageTracker._initData();
+    		pageTracker._trackPageview();
+    	</script>
+
+        <style type="text/css">
+            body { margin:0; background:#000 url('http://indy.poofight.com/blog/wood_dark6.gif'); font-family:'Lucida Grande', Helvetica, sans-serif; }
+                
+            #left { float:right; }
+            #left img { margin:125px 40px 0 0; }
+            
+            #right { width:65%; background:url('http://indy.poofight.com/blog/shadow.png') repeat-y left; float:right; }
+            #right #header { background:url('http://indy.poofight.com/blog/fruitstripe.png') repeat scroll 0%; margin:0 0 0 5px; padding:30px 50px; color:#000; font:16px 'Arial Rounded MT Bold', 'Lucida Grande', Helvetica, sans-serif; }
+            #right #header a:hover { color:#000; }
+            
+            #right #content { width:500px; font-size:12px; line-height:19px; }
+            
+            #right #content h2 { font:18px 'Arial Rounded MT Bold', 'Lucida Grande', Helvetica, sans-serif; }
+            #right #content h2 a { text-decoration:none; color:red; }
+            #right #content h2 a:hover { color:#000; }
+            
+            #right #content .caption { margin-top:10px; }
+            
+            #right #content .label { margin:15px 0 0 0; }
+            #right #content .label .date { float:right; font-size:10px; }
+            #right #content .label .date a { color:#DDD; text-decoration:none; }
+            #right #content .label .date a:hover { color:#000; }
+            
+            #right #content .post { width:500px; margin:60px 55px; }
+            #right #content .post .video .video_holder { text-align:center; background:url('http://indy.poofight.com/blog/fruitstripe.png') }
+            #right #content .post .photo .photo_holder { text-align:center; background:url('http://indy.poofight.com/blog/fruitstripe.png') }
+            #right #content .post .audio .audio_holder { text-align:center; background:url('http://indy.poofight.com/blog/fruitstripe.png') }
+                        
+            #right #content .post .quote span.quote_holder { font:16px 'Arial Rounded MT Bold', 'Lucida Grande', Helvetica, sans-serif; line-height:24px; }
+            #right #content .post .quote span.quote_holder big.quote_mark { font:Bold 100px Georgia, serif; color:#ccc; vertical-align:-40px; line-height:0px; }
+            #right #content .post .quote .source { text-align:right; margin-top:5px; }
+    
+            #right #footer { background:url('http://indy.poofight.com/blog/fruitstripe.png') repeat scroll 0%; margin:0 0 0 5px; padding:30px 50px; color:#000; font:16px 'Arial Rounded MT Bold', 'Lucida Grande', Helvetica, sans-serif; text-align:right; }
+            #right #header a:hover { color:#000; }
+        </style>
+    </head>
+    <body>
+        <div id="right">
+            <div id="header">
+                My name is Andrew Pile. You can find me on <a href="http://www.vimeo.com/andrew">Vimeo</a> (where I work) or <a href="#more">elsewhere</a>.
+            </div>
+            <div id="content">
+                {block:Posts}
+                    <div class="post">
+                        {block:Regular}
+                            <div class="text">
+                                {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+                                {Body}
+                            </div>
+                        {/block:Regular}
+                    
+                        {block:Photo}
+                            <div class="photo">
+                                <div class="photo_holder">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" border="0"/>{LinkCloseTag}</div>
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                        {/block:Photo}
+                        
+                        {block:Audio}
+                            <div class="audio">
+                                <div class="audio_holder">{AudioPlayerBlack}</div>
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                        {/block:Audio}
+                    
+                        {block:Video}
+                            <div class="video">
+                                <div class="video_holder">{Video-500}</div>
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                        {/block:Video}
+                    
+                        {block:Quote}
+                            <div class="quote">
+                                <span class="quote_holder">
+                                    <big class="quote_mark">&#147;</big> {Quote}
+                                </span>
+                                {block:Source}<div class="source">- {Source}</div>{/block:Source}
+                            </div>
+                        {/block:Quote}
+                    
+                        {block:Link}
+                            <div class="link">
+                                <h2><a href="{URL}" {Target}>{Name}</a></h2>
+                                {block:Description}
+                                    <span class="caption">{Description}</span>
+                                {/block:Description}
+                            </div>
+                        {/block:Link}
+                    
+                        {block:Conversation}
+                            <div class="conversation">
+                                {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+                                <ul>
+                                    {block:Lines}
+                                        <li>
+                                            {block:Label}<span class="label">{Label}</span>{/block:Label}
+                                            {Line}
+                                        </li>
+                                    {/block:Lines}
+                                </ul>
+                            </div>
+                        {/block:Conversation}
+                        
+                        <div class="label">
+                            {block:NewDayDate}
+                                <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year} {12Hour}:{Minutes}{AmPm}</a></div>
+                            {/block:NewDayDate}
+
+                            {block:SameDayDate}
+                                <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year} {12Hour}:{Minutes}{AmPm}</a></div>
+                            {/block:SameDayDate}
+                            <br clear="all">
+                        </div>
+                    </div>
+                {/block:Posts}
+            </div>
+            <div id="footer">
+                {block:PreviousPage}
+                    <div style="float:left"><a href="{PreviousPage}">&#171; Previous</a></div>
+                {/block:PreviousPage}
+                {block:NextPage}
+                    <a href="{NextPage}">Next &#187;</a>
+                {/block:NextPage}
+            </div>
+        </div>
+        <div id="left">
+            <a href="/"><img src="http://indy.poofight.com/blog/pile2.png" alt="Me" border=0></a>
+        </div>
+    </body>
+</html>
