@@ -1,26 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Andrew Pile</title>
-    <link href="static/farts.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <div class="content">
-        <p class="boldish">My name is <strong>Andrew Pile</strong>.</p>
 
-        <p>Once upon a time I was employee #1 at <a href="http://vimeo.com/">Vimeo</a>. I <a href="https://vimeo.com/andrew">still put videos there</a> and <a href="https://www.instagram.com/aapp/">take photos</a>. I put everything else <a href="http://log.andrewpile.com/">here</a>. I read <a href="mailto:bostonia@gmail.com">email</a>.</p>
-    </div>
-    <div class="attribute">
-        Key West Naval Base, Florida, 2009
+<head>
+    <title>Andrew Pile</title>
+    <link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display:400,900" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            background-color: #05290d;
+            background-image: url('tram.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        div {
+            width: 50%;
+            position: absolute;
+            bottom: 2.5em;
+            left: 2.5em;
+            color: #FFF;
+            text-shadow: 1px 1px #05290d;
+            font-family: 'Fauna One', serif;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            margin-bottom: 1.5em;
+        }
+        
+        strong {
+            font-weight: 900;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted #ddd;
+        }
+        
+        a:hover {
+            color: #ddd;
+        }
+        
+        p {
+            margin: 2em 0;
+            line-height: 1.5em;
+        }
+        
+        p:first-child,
+        p:last-child {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            <h1>My name is <strong>Andrew Pile</strong></h1>
+        </p>
+
+        <p>I've been doing "internet stuff" my whole life. Today I work at <a href="https://headgum.com">HeadGum</a>.</p>
+
+        <p>Once upon a time I was employee #1 at <a href="http://vimeo.com/">Vimeo</a>. I <a href="https://vimeo.com/andrew">still put videos there</a>.</p>
+
+        <p>I also <a href="https://www.instagram.com/aapp/">take photos</a> and read <a href="mailto:bostonia@gmail.com">email</a>.</p>
     </div>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-347825-4', 'auto');
         ga('send', 'pageview');
     </script>
 </body>
+
 </html>
