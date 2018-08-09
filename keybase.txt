@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/pile
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andrewpile.com
+  * I am pile (https://keybase.io/pile) on keybase.
+  * I have a public key with fingerprint 9D02 2538 2093 8D69 C2EE  0CF7 5EA6 B409 C9A6 73B7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fbc32917b7a5e1d99c8a4e38bc7a07aa09eb8af3ed71a565e1d2f66071fb1b090a",
+      "fingerprint": "9d02253820938d69c2ee0cf75ea6b409c9a673b7",
+      "host": "keybase.io",
+      "key_id": "5ea6b409c9a673b7",
+      "kid": "0101e99b92496862ca55f230e41ad7d59ea4e5cd9bfec825c12b219dc49b461fd3de0a",
+      "uid": "2eb8272d48d13634b6d78e034c4ae919",
+      "username": "pile"
+    },
+    "service": {
+      "hostname": "andrewpile.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1533819758,
+  "expire_in": 157680000,
+  "prev": "008cdc1a625c8ebac29f40409421aac2b0c075f1906fe197152721edd9af08fa",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNnAnicbVJrTBRXGF1gdwvboFQIpAYNmYRKW4LznrkLlTQhbayyYCr0B8L2zswd
+mAqz6+wujyIaDaWNPK1SHkViAywJLdKm0lJqVIRYWCqFElAkEGximmCo0dpaVvqY
+Ifqv98/N/e45555zcsciw0y2kAL/xYgJv+fbkMmRZp8przhVrcQEl1SB2Suxw2hz
+Q8US8nidhxUJs2M4QeKyIFIkIDiBgwwiJABEHtKI4gWRgzgHIQ6QwEOZQhJHQIY1
+MKTMsjhHyAIh4ACHWDImK2oh0tyaonp1WSDhJMlQPIkDipdYIJII4aLMMQiyAo0D
+EUCWowROJxa5PAZDNydAD0pRXPpMPzg37f0P/plvnEAACICkAcuzpAgZRiYpHNEE
+lDiJAUiPwIgSEGQk8iQjEqRAEkASaSDQLCFLlIQ2ffs25Ug9IcmREs1LBMVStMBK
+HI9wihZpiAABDKAHaSosQTrarRQjrCoZ0yelioiMUo0UT2+hKmmozMCkiK4SnenW
+XF6X6CrW74q8XrfHbnC9FW4DXIYE51MZp6Cokt6izihFmkdxqZid0JGiVzF0CYai
+eAJwDJ+MoXK3oiGnYiAYjuVxfRnvoFKjGpwXJZGArJ6aRwIUSSDTuF4iTRJQPwm4
+iHOMTACclZEuSDB6cgJJEoAyzstGKR50RHVhdqDbhIW6pEcpVKHXp+mpr40cMptC
+bCarJdT4XSZbRNSzP+d8c+uGbdsaXpQz8Ii4uXGjdkv8RXxx+aOw7S3Xgz99sWp6
+3DV/9uY7v1mXejLy7thjrkTT0shrYu3QEqUd332+Rc76PM1eO/bVUao1LnchG3oa
+B5KWUo9OKwFHR1roGcuQK2K59d+Nh/3q7bYdLd+Z/UmTn8Kw7zPl8LbyrNaYZrXe
+ldeRQD+aHJt6G1DmhnOVOQd3t/f6UkYtBT9HvHH/Pf+TzrurD3Kt3K8fVyXO1h+/
+Wzn/5WLiNDvTFOdw/B0vNNYM+kOC5r57P6aurO97AW2xzC5H7t/6uuVWf1Hng1vH
+1mrqBzPWTr68M6P7zhO+QzVXdf8T4qzYbxl+OHs/c84KYtNoLHPWblnVpoJNv5tt
+ZReq925MHLhnGnYnOuYPrTQfGVmhTzXQL801OKI+S5SmzSccU8GYnhaf/WxfTnvG
+5fTqPezpqPCq9rEbdf5XjkXfzhsNZLZrc43rXELj5Ul/UtSlBW/hbJw2HNi275O2
+fn5v/i+RfzYMrJ6PL+vd0R183FeXaou9mnTJWlq+ayl9KHuGqH7+YFbCwPbU/BfH
+p3vSegPnup5MDPu+3pVTEAz9Br+gjlv63l2JI37I5/wfDOVqB96P7gp05cmBnMGB
+zg97FsdfXU8/QZ45+dzOv/ZY0+drskti1yubwmf+iBTrehauNo6Vj16bO3XlrZLQ
+031g8fp/aa/BBg==
+=xYdT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pile
+
+==================================================================
